@@ -23,9 +23,9 @@ public class PaisDao extends BaseDao {
             while (rs.next()) {
                 PaisB paisB = new PaisB();
                 paisB.setIdPais(rs.getInt(1));
-                paisB.setNombrePais(rs.getString(2));
+                paisB.setNombre(rs.getString(2));
                 paisB.setPoblacion(rs.getString(3));
-                paisB.setTamaño(rs.getString(4));
+                paisB.setTamano(rs.getString(4));
                 ContinenteB continenteB = new ContinenteB();
                 continenteB.setNombreContinente(rs.getString(5));
                 paisB.setContinenteB(continenteB);
@@ -53,9 +53,9 @@ public class PaisDao extends BaseDao {
             System.out.println(sql);
             while (rs.next()) {
                 PaisB paisB = new PaisB();
-                paisB.setNombrePais(rs.getString(1));
+                paisB.setNombre(rs.getString(1));
                 paisB.setPoblacion(rs.getString(2));
-                paisB.setTamaño(rs.getString(3));
+                paisB.setTamano(rs.getString(3));
                 ContinenteB continenteB = new ContinenteB();
                 continenteB.setNombreContinente(rs.getString(4));
                 paisB.setContinenteB(continenteB);
@@ -86,8 +86,8 @@ public class PaisDao extends BaseDao {
 
                     pais = new PaisB();
                     pais.setIdPais(rs.getInt(1));
-                    pais.setNombrePais(rs.getString(2));
-                    pais.setTamaño(rs.getString(4));
+                    pais.setNombre(rs.getString(2));
+                    pais.setTamano(rs.getString(4));
                     pais.setPoblacion(rs.getString(3));
                     ContinenteB continenteB = new ContinenteB();
                     continenteB.setNombreContinente(rs.getString(5));

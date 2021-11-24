@@ -10,26 +10,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="369f8ec3-4a47-4133-9a0a-a7163a252978" name="Changes" comment="lista participantes ok">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/listaParticipantes.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/uni.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/ParticipanteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/ParticipanteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/ContinenteB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/ContinenteB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/PaisB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/PaisB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daos/ParticipanteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daos/ParticipanteDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/agregarAlumno.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/agregarAlumno.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editarAlumno.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editarAlumno.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/includes/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/includes/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listaAlumnos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listaAlumnos.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/scripts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/scripts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daos/PaisDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daos/PaisDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daos/UniversidadDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daos/UniversidadDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editarPaises.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editarPaises.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listaPaises.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listaPaises.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/beans/ContinenteB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/beans/ContinenteB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/beans/UniversidadB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/beans/UniversidadB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/PaisDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/PaisDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/ParticipanteDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/ParticipanteDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/UniversidadDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/UniversidadDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarPaises.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarPaises.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/includes/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/includes/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/listaPaises.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/listaPaises.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/static/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/static/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/ContinenteB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans/ContinenteB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/UniversidadB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans/UniversidadB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/PaisDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/PaisDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/ParticipanteDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/ParticipanteDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/UniversidadDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/UniversidadDao.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -155,6 +163,21 @@
       <updated>1637715616177</updated>
       <workItem from="1637715619602" duration="1958000" />
     </task>
+    <task id="LOCAL-00001" summary="lista participantes ok">
+      <created>1637753561114</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637753561114</updated>
+    </task>
+    <task id="LOCAL-00002" summary="lista participantes ok">
+      <created>1637754026054</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637754026054</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

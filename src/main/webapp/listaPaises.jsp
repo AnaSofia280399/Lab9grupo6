@@ -48,11 +48,11 @@
                         %>
                         <tbody>
                             <tr>
-                                <td><%=paises.getNombrePais()%>
+                                <td><%=paises.getNombre()%>
                                 </td>
                                 <td><%=paises.getPoblacion()%>
                                 </td>
-                                <td><%=paises.getTamaño()%>
+                                <td><%=paises.getTamano()%>
                                 </td>
                                 <td><%=paises.getContinenteB().getNombreContinente()%>
                                 </td>

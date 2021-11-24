@@ -30,7 +30,7 @@
 
             <section class="formulario mt-3">
                 <div class="mt-2 text-center">
-                    <h1>Editar <%=pais.getNombrePais()%></h1>
+                    <h1>Editar <%=pais.getNombre()%></h1>
                 </div>
             <div class="d-flex justify-content-center">
                 <div class="w-75">
@@ -39,7 +39,7 @@
 
                        <div class="form-group">
                             <label >Nombre del Pais</label>
-                            <input class="form-control" type="text" name="nombre" value="<%= pais.getNombrePais()%>" >
+                            <input class="form-control" type="text" name="nombre" value="<%= pais.getNombre()%>" >
                         </div>
                         <div class="form-group">
                             <label >Poblacion</label>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="form-group">
                             <label >Tamaño</label>
-                            <input class="form-control" type="text" name="tamano" value="<%=pais.getTamaño()%>" >
+                            <input class="form-control" type="text" name="tamano" value="<%=pais.getTamano()%>" >
                         </div>
                         <div class="form-group">
                             <label >Continente al que pertenece</label>
