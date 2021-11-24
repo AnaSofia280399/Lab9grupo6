@@ -17,6 +17,7 @@
     <head>
         <title>Lista de Paises</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/css/cuadro_editar.css">
     </head>
     <body>
         <div class='container'>
@@ -25,9 +26,12 @@
                 <jsp:param name="page" value="paises"/>
             </jsp:include>
 
-            <div class="mt-2 text-center">
-                <h1>Editar <%=pais.getNombrePais()%></h1>
-            </div>
+
+
+            <section class="formulario mt-3">
+                <div class="mt-2 text-center">
+                    <h1>Editar <%=pais.getNombrePais()%></h1>
+                </div>
             <div class="d-flex justify-content-center">
                 <div class="w-75">
                     <form method="POST" action="<%= request.getContextPath()%>/paises?action=editar">
@@ -50,11 +54,12 @@
                             <input class="form-control" type="text" name="continente" value="<%=pais.getContinenteB().getNombreContinente()%>" >
                         </div>
 
-                        <button type="submit" class="btn btn-primary mr-2">Enviar</button>
-                        <a class="btn btn-danger ml-2 " href="<%= request.getContextPath()%>/paises">Cancelar</a>
+                        <button type="submit"  class="btn btn-primary ml-5 mr-2 ">Enviar</button>
+                        <a class="btn btn-danger ml-5 " href="<%= request.getContextPath()%>/paises">Cancelar</a>
                     </form>
                 </div>
             </div>
+            </section>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

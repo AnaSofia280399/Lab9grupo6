@@ -10,13 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d8661f-7f15-4a24-a3f9-8a06fb8d9825" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/agregarPaises.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/editarPaises.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/listaPaises.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/cuadro_editar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/PaisServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/PaisServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daos/PaisDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daos/PaisDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/includes/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/includes/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editarPaises.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editarPaises.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/AlumnoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/AlumnoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/agregarPaises.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/agregarPaises.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarAlumno.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarAlumno.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarPaises.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarPaises.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/AlumnoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/AlumnoDao.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -50,6 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Documentos/clase11demo" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -155,7 +158,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637715616177</updated>
       <workItem from="1637715619602" duration="1958000" />
-      <workItem from="1637718136879" duration="9442000" />
+      <workItem from="1637718136879" duration="10857000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,10 @@
+.formulario{
+    width: 500px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: Century Gothic;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
