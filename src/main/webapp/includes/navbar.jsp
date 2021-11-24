@@ -13,7 +13,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Paises</a>
+                    <a a class="nav-link <%=request.getParameter("page").equals("paises")? "active": "" %>" href="<%=request.getContextPath()%>/paises">Paises</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Participantes</a>

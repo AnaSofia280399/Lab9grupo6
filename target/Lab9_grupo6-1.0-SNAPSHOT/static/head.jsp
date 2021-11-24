@@ -66,10 +66,6 @@
             background-color: #f0e01f91;
         }
 
-        .fila-green{
-            background-color: darkgreen;
-        }
-
 
     </style>
 

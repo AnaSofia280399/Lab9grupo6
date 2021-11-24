@@ -1,12 +1,12 @@
 package beans;
 
 public class PaisB {
-
     private int idPais;
-    private String nombre;
-    private int poblacion;
-    private int tamano;
-    private ContinenteB Continente_idContinente;
+    private String nombrePais;
+    private String poblacion;
+    private String tamaño;
+    private ContinenteB continenteB;
+
 
     public int getIdPais() {
         return idPais;
@@ -16,35 +16,35 @@ public class PaisB {
         this.idPais = idPais;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombrePais() {
+        return nombrePais;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombrePais(String nombrePais) {
+        this.nombrePais = nombrePais;
     }
 
-    public int getPoblacion() {
+    public String getPoblacion() {
         return poblacion;
     }
 
-    public void setPoblacion(int poblacion) {
+    public void setPoblacion(String poblacion) {
         this.poblacion = poblacion;
     }
 
-    public int getTamano() {
-        return tamano;
+    public String getTamaño() {
+        return tamaño;
     }
 
-    public void setTamano(int tamano) {
-        this.tamano = tamano;
+    public void setTamaño(String tamaño) {
+        this.tamaño = tamaño;
     }
 
-    public ContinenteB getContinente_idContinente() {
-        return Continente_idContinente;
+    public ContinenteB getContinenteB() {
+        return continenteB;
     }
 
-    public void setContinente_idContinente(ContinenteB continente_idContinente) {
-        Continente_idContinente = continente_idContinente;
+    public void setContinenteB(ContinenteB continenteB) {
+        this.continenteB = continenteB;
     }
 }

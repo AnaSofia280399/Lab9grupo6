@@ -3,7 +3,7 @@ package beans;
 public class ContinenteB {
 
     private int idContinente;
-    private String nombre;
+    private String nombreContinente;
 
     public String colorF() {
 
@@ -30,11 +30,11 @@ public class ContinenteB {
         this.idContinente = idContinente;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreContinente() {
+        return nombreContinente;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreContinente(String nombreContinente) {
+        this.nombreContinente = nombreContinente;
     }
 }
