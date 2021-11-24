@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Lab9_grupo6:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4037c9d7-4d89-4068-b8cf-f043fd2ae450" name="Changes" comment="">
+    <list default="true" id="369f8ec3-4a47-4133-9a0a-a7163a252978" name="Changes" comment="lista participantes ok">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/listaParticipantes.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/uni.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/ParticipanteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/ParticipanteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/ContinenteB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/ContinenteB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/PaisB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/PaisB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/daos/ParticipanteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daos/ParticipanteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/agregarAlumno.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/agregarAlumno.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editarAlumno.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editarAlumno.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/includes/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/includes/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listaAlumnos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listaAlumnos.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/scripts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/scripts.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +34,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="21LOUm9dMBxmrbBvhsi56ttA5yJ" />
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="21LLqsvkMhQTgSUI5TxmKt0PpDo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/static" />
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.541" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.541" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -38,7 +67,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="679e3958-2590-446e-a002-75191a4b3370" />
+        <option name="BASE_DIRECTORY_NAME" value="8e3dc706-b56f-4221-a6c7-49ba13d853b6" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -46,7 +75,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55320" />
+        <option name="DEBUG_PORT" value="61429" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -119,16 +148,32 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4037c9d7-4d89-4068-b8cf-f043fd2ae450" name="Changes" comment="" />
-      <created>1637716919192</created>
+      <changelist id="e0d8661f-7f15-4a24-a3f9-8a06fb8d9825" name="Changes" comment="" />
+      <created>1637715616177</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637716919192</updated>
-      <workItem from="1637716921952" duration="5914000" />
+      <updated>1637715616177</updated>
+      <workItem from="1637715619602" duration="1958000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lista participantes ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="lista participantes ok" />
   </component>
 </project>

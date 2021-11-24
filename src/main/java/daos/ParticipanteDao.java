@@ -17,23 +17,27 @@ public class ParticipanteDao extends BaseDao {
 
         ArrayList<ParticipanteB> listaParticipantes = new ArrayList<>();
 
-        String sql = "SELECT p.nombre, p.apellido, p.edad, ps.nombre , p.genero FROM participante p left join pais ps on p.idParticipante = ps.idPais;";
+        String sql = "SELECT * FROM participante p left join pais ps on p.Pais_idPais = ps.idPais;";
 
-        try (Connection connection = getConection();
-             PreparedStatement pstmt = connection.prepareStatement(sql);) {
+        try (Connection connection = this.getConection();
+             PreparedStatement pstmt = connection.prepareStatement(sql)) {
 
-            try (ResultSet rs = pstmt.executeQuery();) {
+            try (ResultSet rs = pstmt.executeQuery()) {
                 while (rs.next()) {
 
                     ParticipanteB participanteB = new ParticipanteB();
-
-                    participanteB.setNombre(rs.getString(1));
-                    participanteB.setApellido(rs.getString(2));
-                    participanteB.setEdad(rs.getInt(3));
+                    participanteB.setIdParticipante(rs.getInt(1));
+                    participanteB.setNombre(rs.getString(2));
+                    participanteB.setApellido(rs.getString(3));
+                    participanteB.setEdad(rs.getInt(4));
                     participanteB.setGenero(rs.getString(5));
 
                     PaisB paisB = new PaisB();
-                    paisB.setNombre(rs.getString(4));
+                    paisB.setIdPais(rs.getInt(6));
+                    paisB.setNombre(rs.getString(8));
+
+                    participanteB.setIdpais(paisB);
+
 
                     listaParticipantes.add(participanteB);
 
@@ -45,7 +49,44 @@ public class ParticipanteDao extends BaseDao {
 
         return listaParticipantes;
     }
-    
+
+    public void crearParticipante(ParticipanteB participanteB) {
+        String url = "jdbc:mysql://localhost:3306/labgrupo6?serverTimezone=America/Lima";
+        String sql = "INSERT INTO `labgrupo6`.`participante` (`nombre`, `apellido`, `edad`, `Pais_idPais`,`genero`) VALUES (?,?,?,?,?) ";
+
+
+        try (Connection connection = this.getConection();
+             PreparedStatement pstmt = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS)) {
+            pstmt.setString(1, participanteB.getNombre());
+            pstmt.setString(2, participanteB.getApellido());
+            pstmt.setInt(3, participanteB.getEdad());
+            pstmt.setInt(4, participanteB.getIdpais().getIdPais());
+            pstmt.setString(5, participanteB.getGenero());
+
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+
+        }
+
+    }
+
+    public void agregarParticipante (ParticipanteB participanteB){
+        String sql = "UPDATE `labgrupo6`.`participante` SET `nombre`=?, `apellido`=?,`edad`=? , `nombre`=? , `genero`=?";
+
+        try(Connection connection = this.getConection();
+            PreparedStatement pstmt = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);){
+            pstmt.setString(1, participanteB.getNombre());
+            pstmt.setString(2,participanteB.getApellido());
+            pstmt.setInt(3,participanteB.getEdad());
+            pstmt.setString(4,participanteB.getIdpais().getNombre());
+            pstmt.setString(5,participanteB.getGenero());
+            pstmt.executeUpdate();
+        }catch (SQLException e){
+
+        }
+
+    }
+
 
 
 
