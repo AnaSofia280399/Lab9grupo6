@@ -8,6 +8,9 @@ public class UniversidadB {
     private String url_foto;
     private  PaisB Pais_idPais;
 
+
+
+
     public int getIdUniversidad() {
         return idUniversidad;
     }

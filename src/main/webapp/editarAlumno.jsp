@@ -6,9 +6,6 @@
 
 <%
     AlumnoB alumnoB = (AlumnoB) request.getAttribute("alumno") ;
-    AlumnoDao alumnoDao = new AlumnoDao();
-    AlumnoB alumnoB1 = alumnoDao.buscarAlumno(alumnoB.getIdAlumno());
-
 
 %>
 
@@ -34,16 +31,18 @@
                 <div class="w-75">
                     <form method="POST" action="<%= request.getContextPath()%>/alumnos?action=actualizar">
                         <input type="hidden" class="form-control" name="id" value="<%= alumnoB.getIdAlumno()%>">
+                        <input type="hidden" class="form-control" name="idU" value="<%= alumnoB.getUniversidad_idUniversidad().getIdUniversidad()%>">
 
-                      <!--  <div class="form-group">
+
+                        <div class="form-group">
                             <label >Alumno</label>
-                            <input class="form-control" type="text" disabled   value="<= alumnoB.getIdParticipante().getNombre()+ " " +alumnoB.getIdParticipante().getApellido()%>">
+                            <input class="form-control" type="text" disabled   value="<%= alumnoB.getIdParticipante().getNombre() +" "+ alumnoB.getIdParticipante().getApellido()%>">
                         </div>
 
                         <div class="form-group">
                             <label >Edad</label>
-                            <input class="form-control" type="text" disabled   value="<= alumnoB.getIdParticipante().getEdad()>">
-                        </div> -->
+                            <input class="form-control" type="text" disabled   value="<%= alumnoB.getIdParticipante().getEdad()%>">
+                        </div>
                         <div class="form-group">
                             <label >Código de Alumno</label>
                             <input class="form-control" type="text" name="codigo" value="<%= alumnoB.getCodigo() == 0  ? "" : alumnoB.getCodigo()%>" >
@@ -61,7 +60,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary">Enviar</button>
-                        <a class="btn btn-danger" href="<%= request.getContextPath()%>/alumnos&idU=41">Cancelar</a>
+                        <a class="btn btn-danger" href="<%= request.getContextPath()%>/alumnos&idU=<%= alumnoB.getUniversidad_idUniversidad().getIdUniversidad()%>">Cancelar</a>
                     </form>
                 </div>
             </div>

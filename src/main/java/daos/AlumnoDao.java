@@ -203,7 +203,8 @@ public class AlumnoDao extends BaseDao{
 
     public AlumnoB buscarAlumno(int id){
         AlumnoB alumnoB = new AlumnoB();
-        String sql = "SELECT * FROM labgrupo6.alumno WHERE idAlumno = ?";
+        String sql = "SELECT * FROM alumno a left join participante p on a.Participante_idParticipante = p.idParticipante\n" +
+                "left join universidad u on a.Universidad_idUniversidad = u.idUniversidad WHERE idAlumno = ?;";
 
         try (Connection connection = this.getConection();
              PreparedStatement pstmt = connection.prepareStatement(sql);){
@@ -215,8 +216,17 @@ public class AlumnoDao extends BaseDao{
                     alumnoB.setIdAlumno(id);
                     alumnoB.setCodigo(rs.getInt(2));
                     alumnoB.setPromedio(rs.getInt(3));
+                    alumnoB.setCondicion(rs.getString("condicion"));
 
+                    UniversidadB universidadB = new UniversidadB();
+                    universidadB.setIdUniversidad(rs.getInt("Universidad_idUniversidad"));
+                    alumnoB.setUniversidad_idUniversidad(universidadB);
 
+                    ParticipanteB participanteB = new ParticipanteB();
+                    participanteB.setNombre(rs.getString(8));
+                    participanteB.setApellido(rs.getString(9));
+                    participanteB.setEdad(rs.getInt(10));
+                    alumnoB.setIdParticipante(participanteB);
 
                 }
             }
