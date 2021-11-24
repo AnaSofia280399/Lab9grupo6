@@ -39,11 +39,11 @@ public class UniversidadDao extends BaseDao {
                 universidadB.setNombre(rs.getString(1));
                 universidadB.setRanking(rs.getInt(2));
                 PaisB pais = new PaisB();
-                pais.setNombre(rs.getString(3));
+                pais.setNombrePais(rs.getString(3));
                 ContinenteB continente = new ContinenteB();
-                continente.setNombre(rs.getString(4));
+                continente.setNombreContinente(rs.getString(4));
 
-                pais.setContinente_idContinente(continente);
+                pais.setContinenteB(continente);
                 universidadB.setPais_idPais(pais);
 
 

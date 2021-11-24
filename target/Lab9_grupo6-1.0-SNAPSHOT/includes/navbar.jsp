@@ -19,7 +19,7 @@
                     <a class="nav-link" href="#">Participantes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Universidades</a>
+                    <a class="nav-link  <%=request.getParameter("page").equals("universidades")? "active": "" %>"href="<%=request.getContextPath()%>/universidadesServlet">Universidades</a>
                 </li>
 
             </ul>

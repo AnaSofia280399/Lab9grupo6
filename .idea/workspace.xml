@@ -13,11 +13,16 @@
       <change afterPath="$PROJECT_DIR$/src/main/webapp/css/cuadro_editar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/editarPaises.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editarPaises.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/AlumnoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/AlumnoDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/agregarPaises.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/agregarPaises.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarAlumno.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarAlumno.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarPaises.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarPaises.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/AlumnoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/AlumnoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listaUniversidades.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listaUniversidades.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/Servlets/UniversidadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/Servlets/UniversidadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/beans/ContinenteB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/beans/ContinenteB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/UniversidadDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/UniversidadDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/includes/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/includes/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/listaUniversidades.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/listaUniversidades.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/UniversidadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/UniversidadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/ContinenteB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans/ContinenteB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/UniversidadDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/UniversidadDao.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,5 +180,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

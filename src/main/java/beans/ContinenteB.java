@@ -8,15 +8,15 @@ public class ContinenteB {
     public String colorF() {
 
         String colorF="";
-        if (nombre.equals("Africa")) {
+        if (nombreContinente.equals("Africa")) {
             colorF= "fila-blue";
-        } else if (nombre.equals("America")) {
+        } else if (nombreContinente.equals("America")) {
             colorF= "fila-purple";
-        } else if (nombre.equals("Asia")) {
+        } else if (nombreContinente.equals("Asia")) {
             colorF= "fila-red";
-        } else if (nombre.equals("Europa")){
+        } else if (nombreContinente.equals("Europa")){
             colorF= "fila-yellow";
-        }else if (nombre.equals("Oceania")){
+        }else if (nombreContinente.equals("Oceania")){
             colorF= "fila-green";
         }
         return colorF;

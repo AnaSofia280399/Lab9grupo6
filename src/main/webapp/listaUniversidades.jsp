@@ -15,9 +15,7 @@
                 <div class="col-lg-6">
                     <h1 class='text-light'>Lista <%=filtro ? "Filtro " : ""%>de Universidades</h1>
                 </div>
-                <%
-                    for (UniversidadB uni : listaUniversidades) {
-                %>
+
                 <%=filtro ? "" : "<a class='btn btn-warning' href='" + request.getContextPath() + "/universidadesServlet?filter=on' >Añadir Universidad</a>"%>
             </div>
             <div class="tabla">
@@ -25,10 +23,7 @@
                     <thead>
 
                         <th>
-                            <a href="<%=request.getContextPath()%>/universidadesServlet?filter=formEditar&id=<%=uni.getIdUniversidad()%>"
-                               class="btn btn-outline-dark">UNIVERSIDAD
-                                <i class="bi bi-pencil-square"></i>
-                            </a>
+                            UNIVERSIDAD
 
                         </th>
                         <th>RANKING</th>
@@ -36,17 +31,18 @@
                         <th>CONTINENTE</th>
                         <th>FOTO</th>
                     </thead>
-
-                    <tr class="<%=uni.getPais_idPais().getContinente_idContinente().colorF()%>">
+                    <%
+                        for (UniversidadB uni : listaUniversidades) {
+                    %>
+                    <tr class="<%=uni.getPais_idPais().getContinenteB().colorF()%>">
                         <td><%=uni.getNombre()%>
                         </td>
-                        <td><%=uni.getIdUniversidad()%>
                         </td>
                         <td><%=uni.getRanking()%>
                         </td>
-                        <td><%=uni.getPais_idPais().getNombre()%>
+                        <td><%=uni.getPais_idPais().getNombrePais()%>
                         </td>
-                        <td><%=uni.getPais_idPais().getContinente_idContinente().getNombre()%>
+                        <td><%=uni.getPais_idPais().getContinenteB().getNombreContinente()%>
                         </td>
                         <td><%=uni.getUrl_foto()%>
                         </td>
