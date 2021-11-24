@@ -10,65 +10,75 @@
 
 %>
 <html>
+    <jsp:include page="/static/head.jsp">
+        <jsp:param name="title" value="Lista de Alumnos"/>
+    </jsp:include>
 
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'/>
-        <link rel="shortcut icon" href="<%=request.getContextPath()%>/static/uni.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-              integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <title>Lista Alumnos
-        </title>
+        <title>Lista de Alumnos</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
     </head>
 
     <body>
         <div class='container'>
 
-            <div class="mt-2 text-center">
-                <h1>Lista de Alumnos</h1>
+            <jsp:include page="/includes/navbar.jsp">
+                <jsp:param name="page" value="alumnos"/>
+            </jsp:include>
+
+            <div class="pb-5 pt-4 px-3 titlecolor d-flex justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <h1 class='text-light'> Lista de Alumnos
+                    </h1>
+                </div>
+
+                <div class="my-2">
+                    <a href="<%= request.getContextPath()%>/alumnos?action=crear" class="btn btn-info">Añadir alumno</a>
+                </div>
             </div>
 
-            <div class="d-flex justify-content-center">
-                <div class="w-75">
+            <div >
+                <div >
 
-                    <div class="my-2">
-                        <a href="<%= request.getContextPath()%>/alumnos?action=crear" class="btn btn-info">Añadir alumno</a>
-                    </div>
 
-                    <table class="table table-dark table-transparent table-hover">
-                        <thead>
-                            <tr>
-                                <th>Nombre </th>
-                                <th>Apellido</th>
-                                <th>Edad</th>
-                                <th>Código</th>
-                                <th>Promedio</th>
-                                <th>Condición</th>
-                                <th>Editar</th>
-                                <th>Eliminar</th>
-                            </tr>
-                        </thead>
-                        <%
-                            for(AlumnoB alu : lista){
-                        %>
-                        <tbody>
-                            <tr>
-                                <td style="<%= alu.getColorNombre()%>"><%=alu.getIdParticipante().getNombre()%></td>
-                                <td style="<%= alu.getColorNombre()%>"><%=alu.getIdParticipante().getApellido()%></td>
-                                <td style="<%= alu.getColorNombre()%>"><%=alu.getIdParticipante().getEdad()%></td>
-                                <td style="<%= alu.getColorNombre()%>"><%=alu.getCodigo()%></td>
-                                <td style="<%= alu.getColorNombre()%>" ><%=alu.getPromedio()%></td>
-                                <td style="<%= alu.getColorNombre()%>"><%=alu.getCondicion()%></td>
-                                <td><a href="<%= request.getContextPath()%>/alumnos?action=editar&id=<%=alu.getIdAlumno()%>" class="btn btn-primary"><span class="fa fa-edit"></span></a></td>
-                                <td><%=  alu.EliminaroNo() ? "<a class='btn btn-danger' href='"+request.getContextPath()+ "/alumnos?action=eliminar&id="+alu.getIdAlumno()+"&idU="+alu.getUniversidad_idUniversidad().getIdUniversidad()+"' > Eliminar</a>"
-                                        : "<a class='btn btn-danger' href='"+request.getContextPath()+ "/alumnos?action=borrar&id="+alu.getIdAlumno()+"&idU="+alu.getUniversidad_idUniversidad().getIdUniversidad()+"' > Borrar</a>" %></td>
-                            </tr>
-                        </tbody>
-                        <%
 
-                            }
-                        %>
-                    </table>
+                    <div class="tabla">
+                        <table class="table table-dark table-transparent table-hover">
+                            <thead>
+                                <tr>
+                                    <th>NOMBRE </th>
+                                    <th>APELLIDO</th>
+                                    <th>EDAD</th>
+                                    <th>CODIGO</th>
+                                    <th>PROMEDIO</th>
+                                    <th>CONDICION</th>
+                                    <th>EDITAR</th>
+                                    <th>ELIMINAR</th>
+                                </tr>
+                            </thead>
+                            <%
+                                for(AlumnoB alu : lista){
+                                    %>
+                            <tbody>
+                                <tr>
+                                    <td style="<%= alu.getColorNombre()%>"><%=alu.getIdParticipante().getNombre()%></td>
+                                    <td style="<%= alu.getColorNombre()%>"><%=alu.getIdParticipante().getApellido()%></td>
+                                    <td style="<%= alu.getColorNombre()%>"><%=alu.getIdParticipante().getEdad()%></td>
+                                    <td style="<%= alu.getColorNombre()%>"><%=alu.getCodigo()%></td>
+                                    <td style="<%= alu.getColorNombre()%>" ><%=alu.getPromedio()%></td>
+                                    <td style="<%= alu.getColorNombre()%>"><%=alu.getCondicion()%></td>
+                                    <td><a href="<%= request.getContextPath()%>/alumnos?action=editar&id=<%=alu.getIdAlumno()%>" class="btn btn-primary"><i class="bi bi-pencil-square"></i></a></td>
+                                    <td><%=  alu.EliminaroNo() ? "<a class='btn btn-danger' href='"+request.getContextPath()+ "/alumnos?action=eliminar&id="+alu.getIdAlumno()+"&idU="+alu.getUniversidad_idUniversidad().getIdUniversidad()+"' > Eliminar</a>"
+                                            : "<a class='btn btn-danger' href='"+request.getContextPath()+ "/alumnos?action=borrar&id="+alu.getIdAlumno()+"&idU="+alu.getUniversidad_idUniversidad().getIdUniversidad()+"' > Borrar</a>" %></td>
+                                </tr>
+                            </tbody>
+                            <%
+
+                                }
+                            %>
+                        </table>
+                        </div>
                 </div>
             </div>
         </div>

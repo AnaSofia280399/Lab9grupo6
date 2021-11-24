@@ -22,6 +22,11 @@
                     <a class="nav-link  <%=request.getParameter("page").equals("universidades")? "active": "" %>"href="<%=request.getContextPath()%>/universidadesServlet">Universidades</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="<%= request.getContextPath()%>/alumnos?idU=41">Prueba Alumnos</a>
+                </li>
+
+
             </ul>
 
         </div>
