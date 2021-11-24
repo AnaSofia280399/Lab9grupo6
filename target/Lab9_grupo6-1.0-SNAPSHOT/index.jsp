@@ -15,95 +15,17 @@
                     <h1 class='text-light'>Bienvenido al Consorcio de Universidades !</h1>
                 </div>
             </div>
-            <div class="tabla">
-                <table class="table table-dark table-transparent table-hover">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>NOMBRE</th>
-                            <th>PRUEBA</th>
-                            <th>PRUEBA</th>
-                        </tr>
-                    </thead>
+            <div class="pb-5 pt-4 px-3  d-flex justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <h1 style="color: black">Este es un registro de todas las universidades que pertenecen a nuestro consorcio.
+                        Esta página a sido creada con el fin de poder mejorar las experiencias de intercambio estudiantil</h1>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://www.uhipocrates.edu.mx/wp-content/uploads/2019/08/portada-intercambio-estudiantil.jpg" style="border-radius: 15px 50px 30px"  width="500" height="450" />
+                </div>
 
-                    <tbody>
-                        <tr>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
             </div>
+
         </div>
         <jsp:include page="/static/scripts.jsp"/>
     </body>

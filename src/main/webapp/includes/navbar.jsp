@@ -8,18 +8,18 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Principal
-                        <span class="visually-hidden"></span>
+                    <a class="nav-link " href="<%= request.getContextPath()%>">Inicio
+
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a a class="nav-link <%=request.getParameter("page").equals("paises")? "active": "" %>" href="<%=request.getContextPath()%>/paises">Paises</a>
+                    <a class="nav-link <%=request.getParameter("page").equals("paises")? "active": "" %>" href="<%=request.getContextPath()%>/paises">Paises</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<%= request.getContextPath()%>/participantes">Participantes</a>
+                    <a class="nav-link <%=request.getParameter("page").equals("participantes")? "active": "" %>" href="<%= request.getContextPath()%>/participantes">Participantes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  <%=request.getParameter("page").equals("universidades")? "active": "" %>"href="<%=request.getContextPath()%>/universidadesServlet">Universidades</a>
+                    <a class="nav-link  <%=request.getParameter("page").equals("universidades")? "active": "" %>" href="<%=request.getContextPath()%>/universidadesServlet">Universidades</a>
                 </li>
 
                 <li class="nav-item">
