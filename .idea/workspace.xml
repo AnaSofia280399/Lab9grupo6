@@ -9,12 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d8661f-7f15-4a24-a3f9-8a06fb8d9825" name="Changes" comment="diseno uniforme- paises y alumno">
+    <list default="true" id="e0d8661f-7f15-4a24-a3f9-8a06fb8d9825" name="Changes" comment="diseno inicio">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/includes/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/includes/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/AlumnoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/AlumnoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daos/AlumnoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daos/AlumnoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/agregarAlumno.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/agregarAlumno.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editarAlumno.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editarAlumno.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listaAlumnos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listaAlumnos.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/Servlets/AlumnoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/Servlets/AlumnoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/AlumnoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/WEB-INF/classes/daos/AlumnoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/agregarAlumno.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/agregarAlumno.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarAlumno.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/editarAlumno.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/includes/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/includes/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/listaAlumnos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab9_grupo6-1.0-SNAPSHOT/listaAlumnos.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/AlumnoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/AlumnoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/AlumnoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/AlumnoDao.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +36,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/listaAlumnos.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Servlets/AlumnoServlet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/daos/AlumnoDao.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/agregarAlumno.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/editarAlumno.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -44,22 +61,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/static" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SW1/SW1/LAB10/LAB10_SW1_GRUPO2 (2)/LAB10_SW1_BASE" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.54" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.54" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Lab9_grupo6_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -148,6 +155,18 @@
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -158,6 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637715616177</updated>
       <workItem from="1637715619602" duration="1958000" />
+      <workItem from="1637758944428" duration="5730000" />
     </task>
     <task id="LOCAL-00001" summary="Actualizar">
       <created>1637754769243</created>
@@ -180,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637756940925</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="diseno inicio">
+      <created>1637758255337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637758255337</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +228,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Actualizar" />
     <MESSAGE value="diseno uniforme- paises y alumno" />
-    <option name="LAST_COMMIT_MESSAGE" value="diseno uniforme- paises y alumno" />
+    <MESSAGE value="diseno inicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="diseno inicio" />
   </component>
 </project>

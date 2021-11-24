@@ -7,6 +7,7 @@
 
 <%
     ArrayList<AlumnoB> lista = (ArrayList<AlumnoB>) request.getAttribute("lista");
+    Integer idU2 = (Integer) request.getAttribute("idU2");
 
 %>
 <html>
@@ -34,7 +35,7 @@
                 </div>
 
                 <div class="my-2">
-                    <a href="<%= request.getContextPath()%>/alumnos?action=crear" class="btn btn-info">Añadir alumno</a>
+                    <a href="<%= request.getContextPath()%>/alumnos?action=crear&idU=<%=idU2%>" class="btn btn-info">Añadir alumno</a>
                 </div>
             </div>
 
@@ -68,7 +69,7 @@
                                     <td style="<%= alu.getColorNombre()%>"><%=alu.getCodigo()%></td>
                                     <td style="<%= alu.getColorNombre()%>" ><%=alu.getPromedio()%></td>
                                     <td style="<%= alu.getColorNombre()%>"><%=alu.getCondicion()%></td>
-                                    <td><a href="<%= request.getContextPath()%>/alumnos?action=editar&id=<%=alu.getIdAlumno()%>" class="btn btn-primary"><i class="bi bi-pencil-square"></i></a></td>
+                                    <td><a href="<%= request.getContextPath()%>/alumnos?action=editar&id=<%=alu.getIdAlumno()%>&idU=<%=alu.getUniversidad_idUniversidad().getIdUniversidad()%>" class="btn btn-primary"><i class="bi bi-pencil-square"></i></a></td>
                                     <td><%=  alu.EliminaroNo() ? "<a class='btn btn-danger' href='"+request.getContextPath()+ "/alumnos?action=eliminar&id="+alu.getIdAlumno()+"&idU="+alu.getUniversidad_idUniversidad().getIdUniversidad()+"' > Eliminar</a>"
                                             : "<a class='btn btn-danger' href='"+request.getContextPath()+ "/alumnos?action=borrar&id="+alu.getIdAlumno()+"&idU="+alu.getUniversidad_idUniversidad().getIdUniversidad()+"' > Borrar</a>" %></td>
                                 </tr>

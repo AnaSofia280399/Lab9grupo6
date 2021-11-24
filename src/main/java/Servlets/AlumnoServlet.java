@@ -1,6 +1,7 @@
 package Servlets;
 
 import beans.AlumnoB;
+import beans.ParticipanteB;
 import beans.UniversidadB;
 import daos.AlumnoDao;
 
@@ -10,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -24,61 +26,49 @@ public class AlumnoServlet  extends HttpServlet {
         RequestDispatcher view;
         switch (action){
             case "guardar":
-                AlumnoB alumnoB2 = new AlumnoB();
-                alumnoB2.setIdAlumno(Integer.parseInt(request.getParameter("id")));
-                alumnoB2.setCodigo(Integer.parseInt(request.getParameter("codigo")));
-                alumnoB2.setPromedio(Integer.parseInt(request.getParameter("promedio")));
-                UniversidadB universidadB = new UniversidadB();
-                universidadB.setIdUniversidad(Integer.parseInt("idU"));
-                alumnoB2.setUniversidad_idUniversidad(universidadB);
 
+                AlumnoB alumnoB = new AlumnoB();
 
-                if (!request.getParameter("codigo").equalsIgnoreCase("")
-                        &&!request.getParameter("promedio").equalsIgnoreCase("")
-                        &&!request.getParameter("condicion").equalsIgnoreCase("")
-                        &&!request.getParameter("idU").equalsIgnoreCase("")){
-                    alumnoDao.agregarAlumno(alumnoB2);
-                } else {
-
-                    request.setAttribute("alumno", alumnoB2);
-                    view=request.getRequestDispatcher("/agregarAlumno.jsp");
-                    view.forward(request,response);
-                }
-                int Iduni7 = Integer.parseInt(request.getParameter("idU"));
-                response.sendRedirect(request.getContextPath()+"/alumnos?idU="+Iduni7);
-
-                /*AlumnoB alumnoB = new AlumnoB();
-
-                alumnoB.setUniversidad_idUniversidad("Universidad_idUniversidad");
                 alumnoB.setCodigo(Integer.parseInt(request.getParameter("codigo")));
                 alumnoB.setPromedio(Integer.parseInt(request.getParameter("promedio")));
+                UniversidadB universidadB = new UniversidadB();
+                universidadB.setIdUniversidad(Integer.parseInt(request.getParameter("idU")));
+                alumnoB.setUniversidad_idUniversidad(universidadB);
+                ParticipanteB participanteB = new ParticipanteB();
+                participanteB.setIdParticipante(Integer.parseInt(request.getParameter("Participante_idParticipante")));
+                alumnoB.setIdParticipante(participanteB);
 
-
-                Cancion cancion1 = new Cancion();
-                cancion1.setNombreCancion(request.getParameter("nombre_cancion"));
-                cancion1.setIdAlbum(Integer.parseInt(request.getParameter("id_album")));
-
-                ArrayList<Cancion> listacancion = cancionDao.obtenerListaCanciones();
+                ArrayList<AlumnoB> listaAlumnos = alumnoDao.obtenerListaAlumnosGeneral();
                 boolean evaluar = false;
-                for (Cancion c : listacancion){
-                    if (c.getNombreCancion().equalsIgnoreCase(request.getParameter("nombre_cancion")) ){
-                        evaluar = true;
-                        break;
-                    }
+                int cod = Integer.parseInt(request.getParameter("codigo"));
+                for(AlumnoB alu: listaAlumnos){
+                   if(alu.getCodigo() == cod ){
+                       evaluar = true;
+                       break;
+                   }
                 }
-                if (!request.getParameter("nombre_cancion").equalsIgnoreCase("")
-                        &&!request.getParameter("id_album").equalsIgnoreCase("")
-                        && evaluar == false) {
-                    cancionDao.crearCancion(cancion1);
-                } else {
-                    ArrayList<Album> albums = cancionDao.obtenerListaAlbum();
-                    request.setAttribute("lista", albums);
-                    view = request.getRequestDispatcher("/crearCanciones.jsp");
-                    view.forward(request, response);
-                }
-                response.sendRedirect(request.getContextPath()+"/canciones");
+                if (!request.getParameter("codigo").equalsIgnoreCase("")
+                    &&!request.getParameter("promedio").equalsIgnoreCase("")
+                    &&!request.getParameter("Participante_idParticipante").equalsIgnoreCase("")
+                        && evaluar == false)  {
+                    alumnoDao.crearAlumno(alumnoB);
+                }else {
+                    int idUni = Integer.parseInt(request.getParameter("idU"));
+                    int idPais =  alumnoDao.ObtenerIdpais(idUni);
 
-                break; */
+                    request.setAttribute("idU2", idUni);
+                    ArrayList<ParticipanteB> participantes1 = alumnoDao.obtenerListaParticipantesAgregar(idPais);
+                    request.setAttribute("lista", participantes1);
+
+                    view = request.getRequestDispatcher("/agregarAlumno.jsp");
+                    view.forward(request,response);
+
+                }
+
+                int Iduni0 = Integer.parseInt(request.getParameter("idU"));
+                response.sendRedirect(request.getContextPath()+"/alumnos?idU="+Iduni0);
+
+                break;
 
             case "actualizar":
                 AlumnoB alumnoB1 = new AlumnoB();
@@ -118,6 +108,7 @@ public class AlumnoServlet  extends HttpServlet {
 
 
                 int idUniversidad = Integer.parseInt(request.getParameter("idU"));
+                request.setAttribute("idU2", idUniversidad);
                 ArrayList<AlumnoB> listaAlumnos = alumnoDao.obtenerListaAlumnos(idUniversidad);
                 request.setAttribute("lista", listaAlumnos);
                 view = request.getRequestDispatcher("listaAlumnos.jsp");
@@ -125,11 +116,12 @@ public class AlumnoServlet  extends HttpServlet {
                 break;
             case "crear":
 
+                int idUni = Integer.parseInt(request.getParameter("idU"));
+                int idPais =  alumnoDao.ObtenerIdpais(idUni);
 
-                int idPais = 41;
-
-                ArrayList<AlumnoB> alumnos = alumnoDao.obtenerListaAlumnosAgregar(idPais);
-                request.setAttribute("lista", alumnos);
+                request.setAttribute("idU2", idUni);
+                ArrayList<ParticipanteB> participantes1 = alumnoDao.obtenerListaParticipantesAgregar(idPais);
+                request.setAttribute("lista", participantes1);
 
                 view = request.getRequestDispatcher("/agregarAlumno.jsp");
                 view.forward(request,response);
@@ -143,12 +135,14 @@ public class AlumnoServlet  extends HttpServlet {
 
                 if(alumnoB3 != null){
 
-                   // request.setAttribute("idU", Iduni6);
+
                     request.setAttribute("alumno", alumnoB3);
                     view = request.getRequestDispatcher("/editarAlumno.jsp");
                     view.forward(request, response);
                 }else{
-                    response.sendRedirect(request.getContextPath()+"/alumnos");
+                    int idU1 = Integer.parseInt(request.getParameter("idU"));
+
+                    response.sendRedirect(request.getContextPath()+"/alumnos?idU="+idU1);
                 }
                 break;
 

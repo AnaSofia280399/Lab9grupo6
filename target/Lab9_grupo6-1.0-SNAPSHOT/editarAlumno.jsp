@@ -12,11 +12,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <jsp:include page="/static/head.jsp">
-        <jsp:param name="title" value="Lista de Paises"/>
+        <jsp:param name="title" value="Editar Alumno"/>
     </jsp:include>
 
     <head>
-        <title>Lista de Alumnos</title>
+        <title>Editado de Alumnos</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="<%=request.getContextPath()%>/css/cuadro_editar.css">
     </head>
@@ -62,7 +62,7 @@
                             </div>
 
                             <button type="submit" class="btn btn-primary">Enviar</button>
-                            <a class="btn btn-danger" href="<%= request.getContextPath()%>/alumnos&idU=<%= alumnoB.getUniversidad_idUniversidad().getIdUniversidad()%>">Cancelar</a>
+                            <a class="btn btn-danger" href="<%= request.getContextPath()%>/alumnos?idU=<%= alumnoB.getUniversidad_idUniversidad().getIdUniversidad()%>">Cancelar</a>
 
 
 

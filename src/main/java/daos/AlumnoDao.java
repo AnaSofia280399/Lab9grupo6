@@ -5,11 +5,43 @@ import beans.PaisB;
 import beans.ParticipanteB;
 import beans.UniversidadB;
 
+import javax.servlet.http.Part;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class AlumnoDao extends BaseDao{
+    public ArrayList<AlumnoB> obtenerListaAlumnosGeneral (){
+        ArrayList<AlumnoB> listaAlumnos =new ArrayList<>();
+
+        String sql ="SELECT * FROM labgrupo6.alumno ";
+
+        try (Connection connection = getConection();
+             PreparedStatement pstmt = connection.prepareStatement(sql);){
+
+            try (ResultSet rs = pstmt.executeQuery();){
+                while (rs.next()){
+                    AlumnoB alumnoB = new AlumnoB();
+                    alumnoB.setIdAlumno(rs.getInt(1));
+                    alumnoB.setCodigo(rs.getInt(2));
+                    alumnoB.setPromedio(rs.getInt(3));
+                    alumnoB.setCondicion(rs.getString(4));
+
+
+
+                    listaAlumnos.add(alumnoB);
+
+                }
+            }
+        }catch (SQLException throwables){
+            throwables.printStackTrace();
+        }
+
+
+
+        return listaAlumnos;
+    }
+
 
     public ArrayList<AlumnoB> obtenerListaAlumnos (int id_Universidad){
         ArrayList<AlumnoB> listaAlumnos =new ArrayList<>();
@@ -57,52 +89,41 @@ public class AlumnoDao extends BaseDao{
         return listaAlumnos;
     }
 
-    public ArrayList<AlumnoB> obtenerListaAlumnosAgregar (int id_PaisUniv){
+    public ArrayList<ParticipanteB> obtenerListaParticipantesAgregar (int id_Pais){
 
-        ArrayList<AlumnoB> listaAlumnos =new ArrayList<>();
 
-        String sql ="SELECT * FROM labgrupo6.alumno a left join participante p on a.Participante_idParticipante = p.idParticipante \n" +
-                "left join pais pa on p.Pais_idPais =pa.idPais where a.Universidad_idUniversidad is NULL and p.Pais_idPais = ?";
+        ArrayList<ParticipanteB> listaParticipantes =new ArrayList<>();
+
+        String sql ="SELECT * FROM participante p left join alumno a on p.idParticipante = a.Participante_idParticipante WHERE idAlumno IS NULL and p.Pais_idPais = ?;";
 
         try (Connection connection = getConection();
              PreparedStatement pstmt = connection.prepareStatement(sql);){
 
-            pstmt.setInt(1, id_PaisUniv);
+            pstmt.setInt(1, id_Pais);
 
             try (ResultSet rs = pstmt.executeQuery();){
                 while (rs.next()){
-                    AlumnoB alumnoB = new AlumnoB();
-                    alumnoB.setIdAlumno(rs.getInt(1));
-                    alumnoB.setCodigo(rs.getInt(2));
-                    alumnoB.setPromedio(rs.getInt(3));
-                    alumnoB.setCondicion(rs.getString(4));
-
-                    UniversidadB universidadB = new UniversidadB();
-                    universidadB.setIdUniversidad(rs.getInt(5));
-
                     ParticipanteB participanteB = new ParticipanteB();
-                    participanteB.setIdParticipante(rs.getInt(6));
-                    participanteB.setNombre(rs.getString(8));
-                    participanteB.setApellido(rs.getString(9));
-                    participanteB.setEdad(rs.getInt(10));
-                    participanteB.setGenero(rs.getString(11));
+                    participanteB.setIdParticipante(rs.getInt(1));
+                    participanteB.setNombre(rs.getString(2));
+                    participanteB.setApellido(rs.getString(3));
+                    participanteB.setEdad(rs.getInt(4));
 
                     PaisB paisB = new PaisB();
-                    paisB.setIdPais(rs.getInt(12));
+                    paisB.setIdPais(rs.getInt(6));
                     participanteB.setIdpais(paisB);
-                    //pasara algo si no pongo el p.Pais_idPais
-                    alumnoB.setUniversidad_idUniversidad(universidadB);
-                    alumnoB.setIdParticipante(participanteB);
 
 
-                    listaAlumnos.add(alumnoB);
+
+
+                    listaParticipantes.add(participanteB);
 
                 }
             }
         }catch (SQLException throwables){
             throwables.printStackTrace();
         }
-        return listaAlumnos;
+        return listaParticipantes;
     }
 
     public  void crearAlumno (AlumnoB alumnoB){
