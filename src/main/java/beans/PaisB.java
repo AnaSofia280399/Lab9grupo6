@@ -2,9 +2,9 @@ package beans;
 
 public class PaisB {
     private int idPais;
-    private String nombrePais;
+    private String nombre;
     private String poblacion;
-    private String tamaño;
+    private String tamano;
     private ContinenteB continenteB;
 
 
@@ -16,12 +16,12 @@ public class PaisB {
         this.idPais = idPais;
     }
 
-    public String getNombrePais() {
-        return nombrePais;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombrePais(String nombrePais) {
-        this.nombrePais = nombrePais;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getPoblacion() {
@@ -32,12 +32,12 @@ public class PaisB {
         this.poblacion = poblacion;
     }
 
-    public String getTamaño() {
-        return tamaño;
+    public String getTamano() {
+        return tamano;
     }
 
-    public void setTamaño(String tamaño) {
-        this.tamaño = tamaño;
+    public void setTamano(String tamano) {
+        this.tamano = tamano;
     }
 
     public ContinenteB getContinenteB() {

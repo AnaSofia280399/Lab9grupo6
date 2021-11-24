@@ -13,19 +13,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Paises</a>
+                    <a a class="nav-link <%=request.getParameter("page").equals("paises")? "active": "" %>" href="<%=request.getContextPath()%>/paises">Paises</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Participantes</a>
+                    <a class="nav-link" href="<%= request.getContextPath()%>/participantes">Participantes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Universidades</a>
+                    <a class="nav-link  <%=request.getParameter("page").equals("universidades")? "active": "" %>"href="<%=request.getContextPath()%>/universidadesServlet">Universidades</a>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="<%= request.getContextPath()%>/alumnos?idU=41">Prueba Alumnos</a>
-                </li>
-
 
             </ul>
 
