@@ -22,6 +22,11 @@
                     <a class="nav-link" href="#">Universidades</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="<%= request.getContextPath()%>/alumnos?idU=41">Prueba Alumnos</a>
+                </li>
+
+
             </ul>
 
         </div>
