@@ -225,7 +225,7 @@ public class AlumnoDao extends BaseDao{
         }
         return alumnoB;
     }
-
+//public
 
 
 }
