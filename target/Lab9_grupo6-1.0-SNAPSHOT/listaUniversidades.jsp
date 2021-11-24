@@ -15,32 +15,21 @@
                 <div class="col-lg-6">
                     <h1 class='text-light'>Lista <%=filtro ? "Filtro " : ""%>de Universidades</h1>
                 </div>
-                <%
-                    for (UniversidadB uni : listaUniversidades) {
-                %>
-                <%=filtro ? "" : "<a class='btn btn-warning' href='" + request.getContextPath() + "/universidadesServlet?filter=on' >Añadir Universidad</a>"%>
             </div>
             <div class="tabla">
                 <table class="table table-dark table-transparent table-hover">
                     <thead>
-
-                        <th>
-                            <a href="<%=request.getContextPath()%>/universidadesServlet?filter=formEditar&id=<%=uni.getIdUniversidad()%>"
-                               class="btn btn-outline-dark">UNIVERSIDAD
-                                <i class="bi bi-pencil-square"></i>
-                            </a>
-
-                        </th>
+                        <th>UNIVERSIDAD</th>
                         <th>RANKING</th>
                         <th>PAIS</th>
                         <th>CONTINENTE</th>
                         <th>FOTO</th>
                     </thead>
-
+                    <%
+                        for (UniversidadB uni : listaUniversidades) {
+                    %>
                     <tr class="<%=uni.getPais_idPais().getContinente_idContinente().colorF()%>">
                         <td><%=uni.getNombre()%>
-                        </td>
-                        <td><%=uni.getIdUniversidad()%>
                         </td>
                         <td><%=uni.getRanking()%>
                         </td>
@@ -51,7 +40,7 @@
                         <td><%=uni.getUrl_foto()%>
                         </td>
                         <td>
-                            <a href="<%=request.getContextPath()%>/alumnos<%=uni.getIdUniversidad()%>"
+                            <a href="<%=request.getContextPath()%>/alumnos?action=formEditar&id=<%=uni.getIdUniversidad()%>"
                                type="button" class="btn btn-primary">Mostrar alumnos
                                 <i class="bi bi-pencil-square"></i>
                             </a>
